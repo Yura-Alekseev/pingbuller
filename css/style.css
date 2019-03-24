@@ -4,23 +4,12 @@
 @import "../fonts/OpenSans-ExtraBold.css";
 
 
-.wrapper {
-
-}
-
 .header {
-    background: url("../img/320px-header.png") no-repeat;
+    background: url("../img/320px-header-bg.png") no-repeat;
     background-size: 100%;
     height: 516px;
 }
 
-@media only screen and (min-width: 480px) {
-    .header {
-        background: url("../img/480px-header.png") no-repeat;
-        background-size: 100%;
-        height: 548px;
-    }
-}
 
 /*LOGO*/
 
@@ -65,16 +54,6 @@
     font-family: "League Gothic", sans-serif;
     text-transform: uppercase;
     font-size: 24px;
-}
-
-@media only screen and (min-width: 480px) {
-    .drop-menu {
-        background: rgba(54, 41, 62, 0.97);
-        border: 1px solid #051116;
-        -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    }
 }
 
 .drop-menu a {
@@ -138,25 +117,17 @@
     margin-top: -112px;
 }
 
-@media only screen and (min-width: 480px) {
-    .header-sliders {
-        height: 250px;
-        margin-top: -215px;
-        background: rgba(0, 0, 0, 0.2);
-    }
+.header-sliders-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.header-sliders-content {
+.header-sliders-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-@media only screen and (min-width: 480px) {
-    .header-sliders-content {
-        margin-left: -10px;
-    }
 }
 
 .header-sliders-main {
@@ -173,31 +144,28 @@
     text-transform: uppercase;
     font-size: 18px;
     color: #edbfff;
+
+}
+
+.header-sliders-info {
+    display: none;
+    font-family: "OpenSans-Light", sans-serif;
+    margin-top: 5px;
+    line-height: 24px;
+    font-size: 17px;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: clip;
 }
 
 .iphone-photo {
     display: none;
 }
 
-@media only screen and (min-width: 480px) {
-    .iphone-photo {
-        display: flex;
-        content: url("../img/iphone-photo.png");
-        height: 270px;
-        margin-top: -10px;
-    }
-}
-
 .arrow {
     padding-top: 10px;
     content: url("../img/arrow.png");
     height: 45px;
-}
-
-@media only screen and (min-width: 480px) {
-    .arrow {
-        padding-top: 105px;
-    }
 }
 
 .next-arrow {
@@ -212,12 +180,6 @@
     justify-content: center;
     position: relative;
     margin-top: 80px;
-}
-
-@media only screen and (min-width: 480px) {
-    .header-sliders-radio {
-        margin-top: 20px;
-    }
 }
 
 .header-sliders-radio-btn {
@@ -311,7 +273,7 @@
 .info-logo-icon {
     content: url("../img/info-logo.png");
     margin-left: 10px;
-    height: 35px;
+    height: 32px;
 }
 
 .info-content {
@@ -321,12 +283,6 @@
     margin-left: 30px;
     overflow: hidden;
     text-overflow: clip;
-}
-
-@media only screen and (min-width: 480px) {
-    .info-content {
-        width: 83%;
-    }
 }
 
 .info-content-header {
@@ -406,16 +362,14 @@
 .reviews {
     display: flex;
     flex-direction: column;
+}
+
+.reviews-wrapper {
+    display: flex;
+    flex-direction: column;
     width: 80%;
     margin: 70px 6% 0 13%;
     background: #ffffff;
-}
-
-@media only screen and (min-width: 480px) {
-    .reviews {
-        width: 87%;
-        margin: 70px 4% 0 9%;
-    }
 }
 
 .reviews-photo {
@@ -428,19 +382,12 @@
     border-radius: 50%;
 }
 
-.reviews-wrapper {
+.reviews-title-wrapper {
     display: flex;
     flex-direction: column;
     width: 75%;
     overflow: hidden;
     margin: -25px auto 25px;
-}
-
-@media only screen and (min-width: 480px) {
-    .reviews-wrapper {
-        width: 85%;
-        margin: -25px 0 25px 40px;
-    }
 }
 
 .reviews-title {
@@ -451,27 +398,12 @@
     font-size: 26px;
 }
 
-@media only screen and (min-width: 480px) {
-    .reviews-title {
-        display: flex;
-        flex-direction: row;
-        margin-top: 5px;
-        font-size: 30px;
-    }
-}
-
 .reviews-header-main {
     color: #454545;
 }
 
 .reviews-header-sub {
     color: #edbfff;
-}
-
-@media only screen and (min-width: 480px) {
-    .reviews-header-sub {
-        margin-left: 10px;
-    }
 }
 
 .reviews-main {
@@ -481,12 +413,6 @@
     line-height: 25px;
     font-size: 16px;
     color: #454545;
-}
-
-@media only screen and (min-width: 480px) {
-    .reviews-main {
-        margin-top: 10px;
-    }
 }
 
 /*REVIEWS-SLIDERS-RADIO*/
@@ -557,13 +483,6 @@
     margin: 50px auto;
 }
 
-@media only screen and (min-width: 480px) {
-    .updates {
-        width: 70%;
-        margin: 50px 82px;
-    }
-}
-
 .updates-title {
     font-family: "League Gothic", sans-serif;
     text-transform: uppercase;
@@ -606,13 +525,6 @@
     color: #454545;
 }
 
-@media only screen and (min-width: 480px) {
-    .updates-info-content-main {
-        width: 350px;
-        height: 18px;
-    }
-}
-
 .updates-info-content-sub {
     overflow: hidden;
     text-overflow: clip;
@@ -622,12 +534,6 @@
     margin-top: 5px;
     font-size: 16px;
     color: #454545;
-}
-
-@media only screen and (min-width: 480px) {
-    .updates-info-content-sub {
-        width: 270px;
-    }
 }
 
 .updates-footer {
@@ -649,6 +555,74 @@
     cursor: pointer;
 }
 
+/*BRANDS*/
+
+.brands-separator {
+    height: 2px;
+    background: #e6e6e6;
+    background: -moz-linear-gradient(top, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
+    background: -webkit-linear-gradient(top, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
+    background: -o-linear-gradient(top, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
+    background: -ms-linear-gradient(top, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
+    background: linear-gradient(to bottom, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#fefefe', GradientType=0);
+}
+
+.brands {
+    display: flex;
+    height: 421px;
+}
+
+.brands-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 85%;
+    width: 80%;
+    margin: 50px auto 0;
+}
+
+.brands-item {
+    width: 50%;
+}
+
+.buabong {
+    display: flex;
+    margin: 0 auto;
+    content: url("../img/buabong.png");
+}
+
+.DC {
+    display: flex;
+    margin: 0 auto;
+    content: url("../img/DC.png");
+}
+
+.tree {
+    display: flex;
+    margin: 0 auto;
+    content: url("../img/tree.png");
+}
+
+.awsm {
+    display: flex;
+    margin: 0 auto;
+    content: url("../img/awsm.png");
+}
+
+.raca {
+    display: flex;
+    margin: 0 auto;
+    content: url("../img/raca.png");
+}
+
+.vonzipper {
+    display: flex;
+    margin: 0 auto;
+    content: url("../img/vonzipper.png");
+}
+
 /*NEWS-CATEGORIES*/
 
 .news-categories {
@@ -657,18 +631,9 @@
     border-top: 1px solid #d8d8d8;
 }
 
-@media only screen and (min-width: 480px) {
-    .news-categories {
-        display: flex;
-        flex-direction: column;
-        height: 669px;
-    }
-}
-
 .news-wrapper {
     margin: 50px 0;
 }
-
 
 .news-item {
     display: flex;
@@ -698,96 +663,6 @@
     color: #787878;
 }
 
-
-/*BRANDS*/
-
-.brands-separator {
-    height: 2px;
-    background: #e6e6e6;
-    background: -moz-linear-gradient(top, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
-    background: -webkit-linear-gradient(top, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
-    background: -o-linear-gradient(top, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
-    background: -ms-linear-gradient(top, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
-    background: linear-gradient(to bottom, #e6e6e6 0%, #e6e6e6 50%, #fefefe 50%, #fefefe 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#fefefe', GradientType=0);
-}
-
-.brands {
-    display: flex;
-    height: 421px;
-}
-
-@media only screen and (min-width: 480px) {
-    .brands {
-        height: 231px;
-        border-bottom: 1px solid #fefefe;
-    }
-}
-
-.brands-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 85%;
-    width: 80%;
-    margin: 50px auto 0;
-}
-
-@media only screen and (min-width: 480px) {
-    .brands-wrapper {
-        margin: 30px auto;
-    }
-}
-
-.brands-item {
-    width: 50%;
-}
-
-
-@media only screen and (min-width: 480px) {
-    .brands-item {
-        width: 30%;
-    }
-}
-
-.buabong {
-    display: flex;
-    margin: 0 auto;
-    content: url("../img/buabong.png");
-}
-
-.DC {
-    display: flex;
-    margin: 0 auto;
-    content: url("../img/DC.png");
-}
-
-.tree {
-    display: flex;
-    margin: 0 auto;
-    content: url("../img/tree.png");
-}
-
-.awsm {
-    display: flex;
-    margin: 0 auto;
-    content: url("../img/awsm.png");
-}
-
-
-.raca {
-    display: flex;
-    margin: 0 auto;
-    content: url("../img/raca.png");
-}
-
-.vonzipper {
-    display: flex;
-    margin: 0 auto;
-    content: url("../img/vonzipper.png");
-}
-
 /*FOOTER*/
 
 .footer {
@@ -798,28 +673,11 @@
     background-size: 100%;
 }
 
-@media only screen and (min-width: 480px) {
-    .footer {
-        background: url("../img/480px-footer-bg.png") no-repeat;
-        background-size: 100%;
-    }
-}
-
 .footer-navigation {
     display: none;
     font-family: "League Gothic", sans-serif;
     text-transform: uppercase;
-    font-size: 22px;
-}
-
-@media only screen and (min-width: 480px) {
-    .footer-navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 92%;
-        margin: 50px auto 0;
-    }
+    font-size: 20px;
 }
 
 .footer-navigation a {
@@ -840,12 +698,6 @@
     font-size: 13px;
     color: #ffffff;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-}
-
-@media only screen and (min-width: 480px) {
-    .signature {
-        margin-top: 30px;
-    }
 }
 
 .signature span {

@@ -1,0 +1,184 @@
+/*HEADER*/
+
+@media only screen and (min-width: 480px) {
+    .header {
+        background: url("../img/480px-header-bg.png") no-repeat;
+        background-size: 100%;
+        height: 548px;
+    }
+}
+
+/*DROP-MENU*/
+
+@media only screen and (min-width: 480px) {
+    .drop-menu {
+        background: rgba(54, 41, 62, 0.97);
+        border: 1px solid #051116;
+        -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+/*HEADER-SLIDERS*/
+
+@media only screen and (min-width: 480px) {
+    .header-sliders {
+        height: 250px;
+        margin-top: -215px;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .header-sliders-content {
+        margin-left: -10px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .iphone-photo {
+        display: flex;
+        content: url("../img/iphone-photo.png");
+        height: 270px;
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .arrow {
+        padding-top: 105px;
+    }
+}
+
+/*HEADER-SLIDERS-RADIO*/
+
+@media only screen and (min-width: 480px) {
+    .header-sliders-radio {
+        margin-top: 20px;
+    }
+}
+
+/*MAIN-CONTENT*/
+
+@media only screen and (min-width: 480px) {
+    .info-content {
+        width: 83%;
+    }
+}
+
+/*REVIEWS*/
+
+@media only screen and (min-width: 480px) {
+    .reviews-wrapper {
+        width: 87%;
+        margin: 70px 4% 0 9%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .reviews-title-wrapper {
+        width: 85%;
+        margin: -25px 0 25px 40px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .reviews-title {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .reviews-header-sub {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .reviews-main {
+        margin-top: 10px;
+    }
+}
+
+/*UPDATES*/
+
+@media only screen and (min-width: 480px) {
+    .updates {
+        width: 70%;
+        margin: 50px 82px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .updates-info-content-main {
+        width: 350px;
+        height: 18px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .updates-info-content-sub {
+        width: 270px;
+    }
+}
+
+/*NEWS-CATEGORIES*/
+
+@media only screen and (min-width: 480px) {
+    .news-categories {
+        display: flex;
+        flex-direction: column;
+        height: 669px;
+    }
+}
+
+/*BRANDS*/
+
+@media only screen and (min-width: 480px) {
+    .brands {
+        height: 231px;
+        border-bottom: 1px solid #fefefe;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .brands-wrapper {
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .brands-item {
+        width: 30%;
+    }
+}
+
+/*FOOTER*/
+
+@media only screen and (min-width: 480px) {
+    .footer {
+        background: url("../img/480px-footer-bg.png") no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .footer-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 92%;
+        margin: 50px auto 0;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .signature {
+        margin-top: 30px;
+    }
+}
+
